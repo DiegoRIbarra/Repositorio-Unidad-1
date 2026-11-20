@@ -1,0 +1,19 @@
+research_task:
+  description: >
+    Revisa el contexto que recibiste y genera un listado de los 10 puntos más relevantes sobre {topic}. 
+    Asegúrate de que la información sea precisa, imparcial y objetiva, y que provenga de diversas fuentes confiables.
+    cada punto debe ser lo suficientemente detallado para proporcionar una comprensión completa del tema.
+  expected_output: >
+    Un listado de los 10 puntos más relevantes sobre {topic}, cada uno con una descripción detallada y precisa.
+  agent: researcher
+
+reporting_task:
+  description: >
+    Redacta un informe detallado basado en los 10 puntos más relevantes sobre {topic} que recibiste del investigador. 
+    Asegúrate de que el informe sea claro, conciso y fácil de entender para el público en general, y que presente la 
+    información de manera objetiva y analítica.
+  expected_output: >
+    una nota periodistica totalmente nueva basada en los 10 puntos más relevantes sobre {topic}, 
+    redactada de manera clara, concisa y objetiva pero que sobre todo cumpla con los principios del periodismo de investigación, 
+    incluyendo citas y referencias a las fuentes utilizadas al igual que la estructura de un artículo de periodismo.
+  agent: reporting_analyst
